@@ -1,8 +1,7 @@
 name: Update Dependencies
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    - cron:  '*/5 * * * *'
 jobs:
   commit-time:
     runs-on: ubuntu-latest
